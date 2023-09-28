@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jarditou Ventes</title>
+</head>
+
+<body>
+    
+<header><img src="img/jarditou_html_zip/images/jarditou_logo.jpg" alt="Jarditou_Logo" width="350" height="100"></header>
+                <p>La qualité depuis 70 ans</p>
+
+       
+<nav>
+
+            <ol>
+                <li><a href="index.html" title="Accueil">Accueil</a></li>
+                <li><a href="tableau.html" title="Tableau">Tableau</a></li>
+                <li><a href="contact.html" title="Contact">Contact</a></li>
+            </ol>
+
+            <img src="img/jarditou_html_zip/images/1.png" alt="Jarditou_Promotion">
+</nav>
+
+<h1>Contact</h1>
+<hr>
+
+ <p>* Ces zones sont obligatoires</p>
+
+ <form action="http://bienvu.net/script.php" method="get">
+
+    <fieldset>
+         <legend>Vos Coordonées</legend>
+                <label for="nom">Votre nom* : </label><input type="text" name="nom" id="nom" pattern="^[A-z]+$" required title="Veuillez écrire votre nom"><br>
+                <label for="prenom">Votre prénom* : </label><input type="text" name="prenom" id="prenom" pattern="^[A-z]+$" required title="Veuillez écrire votre prenom"><br>
+                <br>
+                <label for="sexe">Sexe* : </label><input type="radio" name="sexe" id="sexe" value="Féminin" required title="selectionnez votre genre">Féminin
+                <input type="radio" name="sexe" value="Masculin" required title="selectionnez votre genre">Masculin
+                <br>
+                <br>
+                <label for="date_de_naissance">Date de naissance* : </label><input type="date" name="ddn" id="date_de_naissance" required title="Merci d'indiquer votre date de naissance"><br>
+                <label for="code_postal">Code postal* : </label><input type="number" name="code_postal" id="code_postal" required title="Merci d'indiquez votre code postal"><br>
+                <label for="adresse">Adresse : </label><input type="text" name="adresse" id="adresse"><br>
+                <label for="ville">Ville : </label><input type="text" name="ville" id="ville"><br>
+                <label for="email">Email* : </label><input type="email" name="email" id="email" placeholder="exemple@exemple.exemple" required title="Merci d'indiquez votre email"><br>
+    </fieldset>
+
+    <fieldset>
+        <legend>Votre demande</legend>
+        <label for="sujet">Sujet* : </label>
+        <select name="sujet" id="sujet">
+
+                        <option value="">Veuillez selectionner un sujet</option>
+                        <option value="mes_commandes">Mes commandes</option>
+                        <option value="question_sur_un_produit">Question sur un produit</option>
+                        <option value="reclamation">Réclamation</option>
+                        <option value="Autres">Autres</option>
+
+        </select>
+
+        <br>
+
+        <label for="votre_question">Votre question* : </label><textarea name="votre_question" id="votre_question" cols="20" rows="2"></textarea>
+
+      
+    </fieldset>
+
+    <input type="checkbox" name="checkbox" id="checkbox" required title="Veuillez accepter le traitement informatique">* J'accepte le traitement informatique de ce formulaire
+
+    <br>
+
+    <input type="submit" name="envoyer" value="Envoyer">
+    <input type="reset" name="reset" value="Annuler">
+
+</form>
+</html>
