@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mon Entreprise</title>
+    <link rel="stylesheet" type="text/css" href="exo5.css">
+    <script src="exo5.js"></script>
+</head>
+<body>
+    <header>
+        <img src="Image/images/jarditou_logo.jpg" alt="Logo de l'entreprise">
+        <nav>
+            <ul>
+                <li><a href="index.html">Accueil</a></li>
+                <li><a href="tableau.html">Tableau</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+        <img src="Image/images/promotion.jpg" alt="Promotion Jarditou">
+    </header>
+
+
+
+
+
+    <main>
+
+
+
+        <h1>Contact</h1>
+        <p>* Ces champs sont obligatoires</p>
+
+
+
+        <form action="FormValidationServlet" method="post" onsubmit="return validateForm();">
+            <fieldset>
+                <legend>Vos coordonnées</legend>
+                <label for="nom">Nom* :</label>
+                <input type="text" id="nom" name="nom">
+                <span id="error-nom" class="error"></span><br>
+
+                <label for="prenom">Prénom* :</label>
+                <input type="text" id="prenom" name="prenom">
+                <span id="error-prenom" class="error"></span><br>
+
+                <label>Sexe* :</label>
+                <input type="radio" id="masculin" name="sexe" value="masculin">
+                <label for="masculin">Masculin</label>
+                <input type="radio" id="feminin" name="sexe" value="feminin">
+                <label for="feminin">Féminin</label>
+                <span id="error-sexe" class="error"></span><br>
+
+                <label for="date_naissance">Date de Naissance* :</label>
+                <input type="date" id="date_naissance" name="date_naissance">
+                <span id="error-date_naissance" class="error"></span><br>
+
+                <label for="code_postal">Code Postal* :</label>
+                <input type="text" id="code_postal" name="code_postal">
+                <span id="error-code_postal" class="error"></span><br>
+
+                <label for="adresse">Adresse :</label>
+                <input type="text" id="adresse" name="adresse">
+                <span id="error-adresse" class="error"></span><br>
+
+                <label for="ville">Ville :</label>
+                <input type="text" id="ville" name="ville">
+                <span id="error-ville" class="error"></span><br>
+
+                <label for="email">Email* :</label>
+                <input type="email" id="email" name="email">
+                <span id="error-email" class="error"></span>
+            </fieldset>
+
+
+
+
+
+            <fieldset>
+                <legend>Votre demande</legend>
+                <label for="sujet">Sujet* :</label>
+                <select id="sujet" name="sujet" required>
+                    <option value="" disabled selected>Veuillez sélectionner un sujet</option>
+                    <option value="mes_commandes">Mes commandes</option>
+                    <option value="question_produit">Question sur un produit</option>
+                    <option value="reclamation">Réclamation</option>
+                    <option value="autres">Autres</option>
+                </select>
+                <span id="error-sujet" class="error"></span><br>
+
+                <label for="message">Votre question* :</label>
+                <textarea id="message" name="message" rows="4"></textarea>
+                <span id="error-message" class="error"></span>
+            </fieldset>
+            <label>
+                <input type="checkbox" name="accepte_traitement">
+                * J'accepte le traitement informatique de ce formulaire
+            </label>
+            <br>
+            <input type="submit" value="Envoyer">
+            <input type="reset" value="Annuler">
+        </form>
+    </main>
+    <footer>
+        <nav>
+            <ul>
+                <li><a href="mention_legales.html">Mention Légales</a></li>
+                <li><a href="horaires.html">Horaires</a></li>
+                <li><a href="plan_du_site.html">Plan du site</a></li>
+            </ul>
+        </nav>
+    </footer>
+</body>
+</html>
